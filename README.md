@@ -38,12 +38,10 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
-|image|string|null: false|
-|group_id|integer|null: false,
-foreign_key: true|
-|user_id|integer|null: false,
-foreign_key: true|
+|body|text||
+|image|string||
+|group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false、foreign_key: true|
 
 ### Association
 - belongs_to :group
@@ -66,9 +64,7 @@ foreign_key: true|
 
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false|
-|message_id|integer|null: false,
-foreign_key: true|
+|name|string|null: false|
 
 ### Association
 - has_many :messages
