@@ -1,0 +1,27 @@
+.chat-main
+  .chat-main__group-info
+    .group
+      .group-name
+        test
+      .member-list
+        Member : rabirin
+    .edit-button
+      = link_to "#", class: "edit-btn" do
+        Edit
+  .chat-main__message-list
+    .chat-message
+      .chat-message-info
+        .member-name
+          rabirin
+        .chat-time
+          2020/6/26(Fri) 13:45:36
+      .chat-message-content
+        おはよう！
+  %form.chat-main__message-form
+    .message-box
+      %input{class: "textarea", "type": "text", "placeholder": "type a message"}
+      %label{class: "image-form"}
+        = icon('fas', 'image')
+        %input{type: "file", class: "image-file"}
+    %input{class: "send-button", "type": "submit", "value": "Send"}
+    
