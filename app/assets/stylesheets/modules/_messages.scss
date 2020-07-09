@@ -39,7 +39,7 @@
 
   &__group-list{
     background-color: #2f3e51;
-    height: calc(100vh - 100px);
+    height: calc(100% - 100px);
     .group {
       padding: 20px 20px 40px 20px;
       .group-name{
@@ -57,7 +57,7 @@
 
 
 .chat-main {
-  width: calc(100vw - 300px);
+  width: calc(100% - 300px);
   &__group-info{
     background-color: #ffffff;
     height: 100px;
@@ -87,11 +87,10 @@
   }
   &__message-list{
     background-color: #fafafa;
-    height: calc(100vh - 190px);
     display: flex;
     flex-direction: column;
     padding-left: 40px;
-    .chat-message {
+    .message-box {
       margin: 35px 0 46px 0;
       .chat-message-info {
         margin-bottom: 12px;
@@ -106,44 +105,46 @@
           color: #999999;
         }
       }
-      .chat-message-content{
+      .chat-message{
         font-size: 14px;
         color: #434A54;
       }
     }
   }
   &__message-form{
-    background-color: #d2d2d2;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    .message-box {
-      height: 50px;
-      width: 100%;
-      padding-left: 40px;
+    Form{
+      background-color: #d2d2d2;
+      height: 90px;
       display: flex;
-      position: relative;
-      .textarea {
+      align-items: center;
+      .message-box {
+        height: 50px;
         width: 100%;
-        padding: 0 10px;
-      }
-      .image-form {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        .image-file {
-          display: none;
+        padding-left: 40px;
+        display: flex;
+        position: relative;
+        .textarea {
+          width: 100%;
+          padding: 0 10px;
+        }
+        .image-form {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          .image-file {
+            display: none;
+          }
         }
       }
-    }
-    .send-button {
-      margin: 0 40px 0 15px;
-      padding: 0 30px;
-      height: 50px;
-      background-color: #38aef0;
-      color: #fff;
-      font-size: 16px;
-      cursor: pointer;
+      .send-button {
+        margin: 0 40px 0 15px;
+        padding: 0 30px;
+        height: 50px;
+        background-color: #38aef0;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+      }
     }
   }
 }
