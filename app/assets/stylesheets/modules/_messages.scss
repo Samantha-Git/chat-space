@@ -8,6 +8,7 @@
 
 .side-bar {
   width: 300px;
+  overflow: scroll;
   &__user-name{
     background-color: #253141;
     height: 100px;
@@ -87,9 +88,11 @@
   }
   &__message-list{
     background-color: #fafafa;
+    height: calc(100vh - 190px);
     display: flex;
     flex-direction: column;
     padding-left: 40px;
+    overflow: scroll;
     .message-box {
       margin: 35px 0 46px 0;
       .chat-message-info {
